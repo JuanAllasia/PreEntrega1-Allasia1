@@ -8,7 +8,6 @@ body {
     background-color: yellow;
     border-bottom: solid black;
   }
-  
   .navbar-container {
     display: flex;
     align-items: center;

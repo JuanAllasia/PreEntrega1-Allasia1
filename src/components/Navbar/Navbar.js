@@ -1,11 +1,11 @@
 import React from 'react';
 import "./Navbar.css"
-import CartWidget from './CartWidget/CartWidget';
-import Logo from './Logo/Logo';
+import CartWidget from '../CartWidget/CartWidget';
+import Logo from '../Logo/Logo';
 
 const Navbar = () => {
   return (
-    <>
+  <>
     <nav class="navbar">
     <div class="navbar-container">
       <a class="logo" href="#"><Logo/></a>
@@ -16,10 +16,12 @@ const Navbar = () => {
         <li><a href="#"><CartWidget/></a></li>
       </ul>
     </div>
-  </nav>
+    </nav>
+  </>
+  
     
     
-    </>
+    
   );
 }
 
