@@ -1,0 +1,50 @@
+/* Styles for the counter container */
+.Counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Styles for the increment and decrement buttons */
+.Controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the quantity display */
+.Number {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Styles for the "agregar producto" button */
+button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Add more styles as needed */
