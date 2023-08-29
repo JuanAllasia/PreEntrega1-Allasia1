@@ -1,20 +1,20 @@
 import React from 'react';
 import "./Navbar.css"
 import CartWidget from '../CartWidget/CartWidget';
-import Logo from '../Logo/Logo';
-import { NavLink } from 'react-router-dom';
+//import Logo from '../Logo/Logo';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
   <>
-  <link to="/">
-    <h3>OIT</h3>
-  </link>
+  <Link to="/">
+    OIT
+  </Link>
 
   <div className='categories'> 
-  <NavLink to="/category/celular" className={({ isActive }) => isActive ? "ActiveOption" : "Option"}/>
-  <NavLink to="/category/tablets" className={({ isActive }) => isActive ? "ActiveOption" : "Option"}/>
-  <NavLink to="/category/compus" className={({ isActive }) => isActive ? "ActiveOption" : "Option"}/>
+  <Link to="/category/celular" className={({ isActive }) => isActive ? "ActiveOption" : "Option"}>categorias</Link>
+  <Link to="/category/tablets" className={({ isActive }) => isActive ? "ActiveOption" : "Option"}>categorias</Link>
+  <Link to="/category/compus" className={({ isActive }) => isActive ? "ActiveOption" : "Option"}>categorias</Link>
   </div>
   <CartWidget/>
   </>
